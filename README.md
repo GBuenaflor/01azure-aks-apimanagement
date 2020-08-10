@@ -1,5 +1,5 @@
 ----------------------------------------------------------
-# Azure Kubernetes Services (AKS) - Part 07
+# Azure Kubernetes Services (AKS) - Part 08
 # Use Azure API Management with microservices (WCF and Web API) deployed in AKS
  
  
