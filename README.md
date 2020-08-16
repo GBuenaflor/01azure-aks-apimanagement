@@ -12,12 +12,23 @@
 #### Configuration Flow :
 
 ```diff
-- This page is under construction, I am finalizing the code, please stay tuned. 
+- This page is under construction, I am finalizing the code, please stay tuned.
+- This page is under construction, I am finalizing the code, please stay tuned.
+- This page is under construction, I am finalizing the code, please stay tuned.
+
 ```
 
 
 ![Image description](https://github.com/GBuenaflor/01azure-aks-apimanagement/blob/master/Images/GB-AKS-API03.png)
 
+
+
+```diff
+- This page is under construction, I am finalizing the code, please stay tuned.
+- This page is under construction, I am finalizing the code, please stay tuned.
+- This page is under construction, I am finalizing the code, please stay tuned.
+
+```
 
 
 ------------------------------------------------------------------------------
