@@ -22,7 +22,7 @@
 ![Image description](https://github.com/GBuenaflor/01azure-aks-apimanagement/blob/master/Images/GB-AKS-API-E1-01.png)
 
 ----------------------------------------------------------
-## 1. Provision the environment using Azure Terraform
+### 1. Provision the environment using Azure Terraform
 
 ```
 terraform init
@@ -30,7 +30,7 @@ terraform plan
 terraform apply
 ```
 ----------------------------------------------------------
-## 2. Generate Lets Encrypt Certificate using certbot, use your Linux Ubuntu Machine
+### 2. Generate Lets Encrypt Certificate using certbot, use your Linux Ubuntu Machine
 
 
 
@@ -70,7 +70,7 @@ B4lrT50H2kztfTZGKvdQFOemecgfIYSKibahhnhCpfk
 
 
 ----------------------------------------------------------
-## 3 Convert the certificate .pem to .pfx format
+### 3. Convert the certificate .pem to .pfx format
 
 ```
 sudo su root
@@ -88,7 +88,7 @@ Enter a Password : [CertificatePassword]
   
  
 ----------------------------------------------------------
-## 4. Upload the Lets Encrypt Certificate to App Gateway, For testing add new Listener and backend pool connected to a VM with Default IIS configurations. In Production you may need to purchase shiny certificate.
+### 4. Upload the Lets Encrypt Certificate to App Gateway, For testing add new Listener and backend pool connected to a VM with Default IIS configurations. In Production you may need to purchase shiny certificate.
 
 
  ![Image description](https://github.com/GBuenaflor/01azure-aks-apimanagement/blob/master/Images/GB-AKS-API-E1-03.png)
@@ -101,8 +101,12 @@ Enter a Password : [CertificatePassword]
 #### Go to next or other Episodes:
 
 Episode 1 - Build the infrastructure using Azure Terraform and Generate the Lets Encrypt Certificate
+https://github.com/GBuenaflor/01azure-aks-apimanagement/
+
 
 Episode 2 - Create ASP.Net Core Web API and WCF app then deploy to AKS using Windows and Linux Node Pool
+
+
 
 Episode 3 - Configure API Management External and Internal Enpoints
 
