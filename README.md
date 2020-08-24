@@ -100,12 +100,14 @@ Enter a Password : [CertificatePassword]
 #### Go to next or other Episodes:
 [Episode1](https://github.com/GBuenaflor/01azure-aks-apimanagement/) - Build the infrastructure using Azure Terraform and Generate the Lets Encrypt Certificate 
 
-
-Episode 2 - Create ASP.Net Core Web API and WCF app then deploy to AKS using Windows and Linux Node Pool
+[Episode2](https://github.com/GBuenaflor/01azure-aks-apimanagement-02/) - Create ASP.Net Core Web API and WCF app then deploy to AKS using Windows and Linux Node Pool
 
 
 
 Episode 3 - Configure API Management External and Internal Enpoints
+
+
+
 
 
 
