@@ -14,8 +14,8 @@
 
 
 1. Create Infra using Azure Terraform
-2. Generate Lets Encrypt Certificate using certbot
-3. Add new "TXT" record to Azure DNS Zone
+2. Generate Lets Encrypt Certificate using certbot,and add new "TXT" record to Azure DNS Zone
+3. Convert the certificate .pem to .pfx format 
 4. Upload Certificate to Application Load Balancer
 
 
@@ -30,8 +30,7 @@ terraform plan
 terraform apply
 ```
 ----------------------------------------------------------
-### 2. Generate Lets Encrypt Certificate using certbot, use your Linux Ubuntu Machine
-
+### 2. Generate Lets Encrypt Certificate using certbot,and add new "TXT" record to Azure DNS Zone
 
 
 #### 2.1 install certbot 
@@ -70,22 +69,22 @@ B4lrT50H2kztfTZGKvdQFOemecgfIYSKibahhnhCpfk
 
 
 ----------------------------------------------------------
-### 3. Convert the certificate .pem to .pfx format
+### 3. Convert the certificate .pem to .pfx format 
+
+#### 3.1 Map to the certificate location
 
 ```
 sudo su root
-cd /etc/letsencrypt/live/aks01-web.xxxxxxx.net
+cd /etc/letsencrypt/live/aks01-web.xxxxxxx.net  
 ```
 
-#### 3.1 Export certificates
-
+#### 3.2 Export the certificate
 ```
 openssl pkcs12 -export -out cert01.pfx -inkey privkey.pem -in fullchain.pem
 
 Enter a Password : [CertificatePassword]
-
 ```
-  
+ 
  
 ----------------------------------------------------------
 ### 4. Upload the Lets Encrypt Certificate to App Gateway, For testing add new Listener and backend pool connected to a VM with Default IIS configurations. In Production you may need to purchase shiny certificate.
