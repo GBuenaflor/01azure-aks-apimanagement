@@ -6,7 +6,7 @@
 #### High Level Architecture Diagram:
 
 
-![Image description](https://github.com/GBuenaflor/01azure-aks-apimanagement/blob/master/Images/GB-AKS-API02A.png)
+![Image description](https://github.com/GBuenaflor/01azure-aks-apimanagement/blob/master/Images/GB-AKS-API02B.png)
 
 
 #### Configuration Flow :
