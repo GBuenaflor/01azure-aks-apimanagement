@@ -8,15 +8,16 @@
 
 ![Image description](https://github.com/GBuenaflor/01azure-aks-apimanagement/blob/master/Images/GB-AKS-API02B.png)
 
+----------------------------------------------------------
 
-#### Configuration Flow :
+#### Episode 1 - Build the infrastructure using Azure Terraform and Generate the Lets Encrypt Certificate
+
 
 1. Create Infra using Azure Terraform
-2. Generate Lets Encrypt Certificate using CERTBot
+2. Generate Lets Encrypt Certificate using certbot
 3. Add new "TXT" record to Azure DNS Zone
 4. Upload Certificate to Application Load Balancer
 
-#### Episode 1 - Build the infrastructure using Azure Terraform and Generate the Lets Encrypt Certificate
 
 ![Image description](https://github.com/GBuenaflor/01azure-aks-apimanagement/blob/master/Images/GB-AKS-API-E1-01.png)
 
@@ -29,7 +30,7 @@ terraform plan
 terraform apply
 ```
 ----------------------------------------------------------
-## 2. Generate Lets Encrypt Certificate using CERTBot, use your Linux Ubuntu Machine
+## 2. Generate Lets Encrypt Certificate using certbot, use your Linux Ubuntu Machine
 
 
 
@@ -47,7 +48,7 @@ sudo apt-get install letsencrypt
  ```
 sudo chown root ./certbot-auto
 sudo chmod 0755 ./certbot-auto
-sudo ./certbot-auto certonly --manual --preferred-challenges=dns --email gbuenaflor@iom.int --server https://acme-v02.api.letsencrypt.org/directory --agree-tos -d *.aks01-web.iomdev.net
+sudo ./certbot-auto certonly --manual --preferred-challenges=dns --email <YourEmailHere> --server https://acme-v02.api.letsencrypt.org/directory --agree-tos -d *.aks01-web.iomdev.net
 ```
 
 
@@ -101,11 +102,14 @@ B4lrT50H2kztfTZGKvdQFOemecgfIYSKibahhnhCpfk
  
   
 
-#### Go to other Episodes:
+#### Go to next or other Episodes:
 
 Episode 1 - Build the infrastructure using Azure Terraform and Generate the Lets Encrypt Certificate
+
 Episode 2 - Create ASP.Net Core Web API and WCF app then deploy to AKS using Windows and Linux Node Pool
-Episode 3 - Configure API Management External and Internal Enpoints 
+
+Episode 3 - Configure API Management External and Internal Enpoints
+
 
 
  
