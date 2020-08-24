@@ -51,29 +51,7 @@ sudo chmod 0755 ./certbot-auto
 sudo ./certbot-auto certonly --manual --preferred-challenges=dns --email <YourEmailHere> --server https://acme-v02.api.letsencrypt.org/directory --agree-tos -d *.aks01-web.xxxxxxx.net
 ```
 
-
- ![Image description](https://github.com/GBuenaflor/01azure-aks-apimanagement/blob/master/Images/GB-AKS-API-E1-02.png)
-
-
-
-#### 2.3 Convert the .pem to .pfx
-
-```
-sudo su root
-cd /etc/letsencrypt/live/aks01-web.xxxxxxx.net
-```
-
-#### 2.4 Export certificates
-
-```
-openssl pkcs12 -export -out cert01.pfx -inkey privkey.pem -in fullchain.pem
-
-Enter a Password : [CertificatePassword]
-
-```
-
-----------------------------------------------------------
-## 3. Add new "TXT" record to Azure DNS Zone
+#### 2.3 Add new "TXT" record to Azure DNS Zone
 
 #### Name
 ```
@@ -85,16 +63,35 @@ _acme-challenge.aks01-web.xxxxxxx.net with the following value:
 B4lrT50H2kztfTZGKvdQFOemecgfIYSKibahhnhCpfk
 ```
 
+
 #### Before continuing, verify the record is deployed.
+
+ ![Image description](https://github.com/GBuenaflor/01azure-aks-apimanagement/blob/master/Images/GB-AKS-API-E1-02.png)
+
+
+----------------------------------------------------------
+## 3 Convert the certificate .pem to .pfx format
+
+```
+sudo su root
+cd /etc/letsencrypt/live/aks01-web.xxxxxxx.net
+```
+
+#### 3.1 Export certificates
+
+```
+openssl pkcs12 -export -out cert01.pfx -inkey privkey.pem -in fullchain.pem
+
+Enter a Password : [CertificatePassword]
+
+```
+  
+ 
+----------------------------------------------------------
+## 4. Upload the Lets Encrypt Certificate to App Gateway, For testing add new Listener and backend pool connected to a VM with Default IIS configurations. In Production you may need to purchase shiny certificate.
 
 
  ![Image description](https://github.com/GBuenaflor/01azure-aks-apimanagement/blob/master/Images/GB-AKS-API-E1-03.png)
- 
-----------------------------------------------------------
-## 4. Upload the Lets Encrypt Certificate to App Gateway, In Prod you may need to purchase shiny certificate
-
-
- ![Image description](https://github.com/GBuenaflor/01azure-aks-apimanagement/blob/master/Images/GB-AKS-API-E1-04.png)
 
 
 ------------------------------------------------------------------------------
