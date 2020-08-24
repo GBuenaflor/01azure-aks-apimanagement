@@ -60,16 +60,15 @@ sudo ./certbot-auto certonly --manual --preferred-challenges=dns --email <YourEm
 
 ```
 sudo su root
-cd /etc/letsencrypt/live/aks01-web.iomdev.net
+cd /etc/letsencrypt/live/aks01-web.xxxxxxx.net
 ```
 
 #### 2.4 Export certificates
 
 ```
-# openssl pkcs12 -export -out abc.pfx -inkey privkey.pem -in fullchain.pem
 openssl pkcs12 -export -out cert01.pfx -inkey privkey.pem -in fullchain.pem
 
-Enter a Password : [Enter Your Password Here]
+Enter a Password : [CertificatePassword]
 
 ```
 
@@ -78,7 +77,7 @@ Enter a Password : [Enter Your Password Here]
 
 #### Name
 ```
-_acme-challenge.aks01-web.iomdev.net with the following value:
+_acme-challenge.aks01-web.xxxxxxx.net with the following value:
 ```
 
 #### Value
