@@ -48,7 +48,7 @@ sudo apt-get install letsencrypt
  ```
 sudo chown root ./certbot-auto
 sudo chmod 0755 ./certbot-auto
-sudo ./certbot-auto certonly --manual --preferred-challenges=dns --email <YourEmailHere> --server https://acme-v02.api.letsencrypt.org/directory --agree-tos -d *.aks01-web.iomdev.net
+sudo ./certbot-auto certonly --manual --preferred-challenges=dns --email <YourEmailHere> --server https://acme-v02.api.letsencrypt.org/directory --agree-tos -d *.aks01-web.xxxxxxx.net
 ```
 
 
