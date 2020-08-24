@@ -86,7 +86,7 @@ _acme-challenge.aks01-web.iomdev.net with the following value:
 B4lrT50H2kztfTZGKvdQFOemecgfIYSKibahhnhCpfk
 ```
 
-#### Get the Before continuing, verify the record is deployed.
+#### Before continuing, verify the record is deployed.
 
 
  ![Image description](https://github.com/GBuenaflor/01azure-aks-apimanagement/blob/master/Images/GB-AKS-API-E1-03.png)
