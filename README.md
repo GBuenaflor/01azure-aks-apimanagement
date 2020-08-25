@@ -15,7 +15,7 @@
 
 ----------------------------------------------------------
 
-#### Episode 1 - Build the infrastructure using Azure Terraform and Generate the Lets Encrypt Certificate
+### Episode 1 - Build the infrastructure using Azure Terraform and Generate the Lets Encrypt Certificate
 
 
 1. Create Infra using Azure Terraform
