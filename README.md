@@ -5,7 +5,7 @@
 
 [Episode2](https://github.com/GBuenaflor/01azure-aks-apimanagement-02/) - Create and contenerize ASP.Net Core Web API and WCF app then deploy to AKS ( Windows and Linux Node Pool)
 
-[Episode3](https://github.com/GBuenaflor/01azure-aks-apimanagement-03/) - Configure API Management External / Internal Endpoints and publish API's that runs in AKS
+[Episode3](https://github.com/GBuenaflor/01azure-aks-apimanagement-03/) - Configure API Management External / Internal Endpoints and publish API's that runs from AKS
 
 ----------------------------------------------------------
 ### High Level Architecture Diagram for the 3 Episodes:
@@ -113,7 +113,7 @@ Enter a Password : [CertificatePassword]
 
 [Episode2](https://github.com/GBuenaflor/01azure-aks-apimanagement-02/) - Create and contenerize ASP.Net Core Web API and WCF app then deploy to AKS ( Windows and Linux Node Pool)
 
-[Episode3](https://github.com/GBuenaflor/01azure-aks-apimanagement-03/) - Configure API Management External / Internal Endpoints and publish API's that runs in AKS
+[Episode3](https://github.com/GBuenaflor/01azure-aks-apimanagement-03/) - Configure API Management External / Internal Endpoints and publish API's that runs from AKS
 
 
 
